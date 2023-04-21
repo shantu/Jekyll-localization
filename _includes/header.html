@@ -1,3 +1,74 @@
+<header class="container-xxl">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light bg-transparent"
+      id="gtco-main-nav"
+    >
+      <a class="navbar-brand" href="/">
+        <img src={{ site.headerlogo }} height="80" alt="" loading="lazy" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#my-nav"
+        aria-controls="my-nav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="my-nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto"></ul>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+               href="#"
+               id="langDropdown"
+               role="button"
+               data-mdb-toggle="dropdown"
+               aria-expanded="false">
+                {% t site.lang %}
+            </a>
+            <!-- Dropdown menu -->
+            <ul class="dropdown-menu shadow" aria-labelledby="langDropdown">
+                {% for language in site.languages %}
+                    {% if site.lang != language %}
+                        <li>
+                            {% if site.languages[0] == language %}
+                                <a id="header-switch-to-{{ language }}" href="{{ site.baseurl_root }}{{ page.url }}" class="dropdown-item link bg-darker-hover">{% t language %}</a>
+                            {% else %}
+                                <a id="header-switch-to-{{ language }}" href="{{ site.baseurl_root }}/{{ language }}{{ page.url }}" class="dropdown-item link bg-darker-hover">{% t language %}</a>
+                            {% endif %}
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </li>
+        <form class="form-inline my-2">
+          <a
+            href="https://patient.medicalwisdom.de/"
+            class="btn btn-outline-dark my-2 my-sm-0 mr-3"
+            target="_blank"
+            data-bs-toggle="tooltip"
+            data-bs-html="true"
+            data-bs-placement="bottom"
+            title="{% t patientlogintooltip %}"
+            >{% t patientlogin %}</a
+          >
+          <a
+            href="https://doctor.medicalwisdom.de/"
+            class="btn btn-outline-dark my-2 my-sm-0 mr-3"
+            target="_blank"
+            data-bs-toggle="tooltip"
+            data-bs-html="true"
+            data-bs-placement="bottom"
+            title="{% t doctorlogintooltip %}"
+            >{% t doctorlogin %}</a
+          >
+        </form>
+      </div>
+    </nav>
+  </header>
+  
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
         <h1>

@@ -18,24 +18,25 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "OctoBot: Free open source trading robot"
-email: drakkar-software@octobot.online
+title: "medicalWISDOM - Elderly Care"
+email: info@technicise.com
 description: >- # this means to ignore newlines until "baseurl:"
   OctoBot is an open source cryptocurrency trading robot
   designed to be easy to use and infinitely customizable.
 baseurl: "" # the subpath of your site, e.g. /blog
-logo: /assets/images/octobot_small.png
-url: "https://www.octobot.online" # the base hostname & protocol for your site, e.g. http://example.com
-author: "Drakkar-Software"
-twitter:
-  username: DrakkarsOctoBot
-  card: summary
-social:
-  name: OctoBot
-  links:
-    - https://twitter.com/DrakkarsOctoBot
-    - https://github.com/Drakkar-Software/OctoBot
-github_username:  https://github.com/Drakkar-Software/OctoBot
+logo: assets/images/mw-logo-with-text-vertical.png
+headerlogo: /assets/images/medicalWISDOM.png
+url: "https://www.medicalwisdom.de" # the base hostname & protocol for your site, e.g. http://example.com
+author: "technicise"
+# twitter:
+#   username: DrakkarsOctoBot
+#   card: summary
+# social:
+#   name: OctoBot
+#   links:
+#     - https://twitter.com/DrakkarsOctoBot
+#     - https://github.com/Drakkar-Software/OctoBot
+# github_username:  https://github.com/Drakkar-Software/OctoBot
 
 collections:
   articles:
@@ -70,7 +71,7 @@ plugins:
   - jekyll-multiple-languages-plugin
 
 # jekyll-multiple-languages-plugin settings:
-languages: [ "en", "fr"]
+languages: [ "en", "de"]
 
 exclude_from_localizations: [ "javascript", "images", "css", "scripts", "favicon.ico" ]
 
