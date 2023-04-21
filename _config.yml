@@ -24,10 +24,15 @@ description: >- # this means to ignore newlines until "baseurl:"
   OctoBot is an open source cryptocurrency trading robot
   designed to be easy to use and infinitely customizable.
 baseurl: "" # the subpath of your site, e.g. /blog
+companyname: "Technicise Software & Technologies Pvt. Ltd."
+country: Germany
 logo: assets/images/mw-logo-with-text-vertical.png
 headerlogo: /assets/images/medicalWISDOM.png
 url: "https://www.medicalwisdom.de" # the base hostname & protocol for your site, e.g. http://example.com
 author: "technicise"
+# Application urls
+patientportal: "https://patient.medicalwisdom.de/"
+doctorportal: "https://doctor.medicalwisdom.de/"
 # twitter:
 #   username: DrakkarsOctoBot
 #   card: summary

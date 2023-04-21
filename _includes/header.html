@@ -45,7 +45,7 @@
         </li>
         <form class="form-inline my-2">
           <a
-            href="https://patient.medicalwisdom.de/"
+            href="{{site.patientportal}}"
             class="btn btn-outline-dark my-2 my-sm-0 mr-3"
             target="_blank"
             data-bs-toggle="tooltip"
@@ -55,7 +55,7 @@
             >{% t patientlogin %}</a
           >
           <a
-            href="https://doctor.medicalwisdom.de/"
+            href="{{site.doctorportal}}"
             class="btn btn-outline-dark my-2 my-sm-0 mr-3"
             target="_blank"
             data-bs-toggle="tooltip"
@@ -68,59 +68,3 @@
       </div>
     </nav>
   </header>
-  
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
-        <h1>
-            <a id="header-go-to-home"
-               href="{% tl octobot %}" class="navbar-brand ms-4">
-                <img src="/assets/images/octobot_30px.png" alt="">
-                {% t octobot %}
-            </a>
-        </h1>
-        <button
-                id="header-expand-navbar"
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarNav">
-            <ul class="navbar-nav">
-                {% for item in site.data.navigation %}
-                <a id="header-go-to-page-{{ item.name }}" href="{% unless item.link contains 'http' %}{{ site.baseurl }}{% endunless %}{{ item.link }}" class="nav-link link {% if page.url == item.link %}active{% endif %}">{% t item.name %}</a>
-                {% endfor %}
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                       href="#"
-                       id="langDropdown"
-                       role="button"
-                       data-mdb-toggle="dropdown"
-                       aria-expanded="false">
-                        {% t site.lang %}
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu shadow" aria-labelledby="langDropdown">
-                        {% for language in site.languages %}
-                            {% if site.lang != language %}
-                                <li>
-                                    {% if site.languages[0] == language %}
-                                        <a id="header-switch-to-{{ language }}" href="{{ site.baseurl_root }}{{ page.url }}" class="dropdown-item link bg-darker-hover">{% t language %}</a>
-                                    {% else %}
-                                        <a id="header-switch-to-{{ language }}" href="{{ site.baseurl_root }}/{{ language }}{{ page.url }}" class="dropdown-item link bg-darker-hover">{% t language %}</a>
-                                    {% endif %}
-                                </li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>

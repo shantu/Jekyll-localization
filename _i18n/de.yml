@@ -3,8 +3,16 @@ en: Englisch
 
 patientlogin: Patienten-Login
 doctorlogin: Doctor Login
-patientlogintooltip: <em>Register</em> and/or <em>Log in</em> here for a patient and member(s) of his/her team who will assist or represent the patient
-doctorlogintooltip: <em>Register</em> and/or <em>Log in</em> here for doctors, their team members and care coordinators.
+patientlogintooltip: Registrieren und/oder melden Sie sich hier für einen Patienten und Mitglieder seines/ihres Teams an, die den Patienten unterstützen oder vertreten.
+doctorlogintooltip: Hier registrieren und/oder einloggen für Ärzte, ihre Teammitglieder und Pflegekoordinatoren.
+
+aboutmenu: About
+contactusmenu: Contact Us
+privacypolicymenu: Datenschutz-Bestimmungen
+termsmenu: Bedingungen
+sitemapmenu: Seitenverzeichnis
+
+cookiesterms:  When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes. 
 
 octobot: OctoBot
 guides: Guides
