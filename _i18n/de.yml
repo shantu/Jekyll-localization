@@ -12,7 +12,34 @@ privacypolicymenu: Datenschutz-Bestimmungen
 termsmenu: Bedingungen
 sitemapmenu: Seitenverzeichnis
 
-cookiesterms:  When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes. 
+cookiesterms:  Wenn Sie unsere Websites, Dienste oder Tools besuchen oder mit ihnen interagieren, können wir oder unsere autorisierten Dienstleister Cookies zum Speichern von Informationen verwenden, um Ihnen ein besseres, schnelleres und sichereres Erlebnis zu bieten, und für Marketingzwecke.
+rights: Alle Rechte vorbehalten
+herotext: Holen Sie sich die besten Ratschläge von führenden Fachärzten...
+herosubtitle: Expertenbewertung, die für Sie personalisiert ist.
+register: Registrieren
+
+landing:
+- title: Telekonsultationen
+  image: teleconsult.svg
+  items:
+  - title: Privatberatung mit Datenschutz
+  - title: Kein Warten in den Warteschlangen
+  - title: Transparente Prozesse ermöglichen einen personalisierten Wiederherstellungsplan
+  - title: Erneuern Sie Rezepte, wenn Sie brauchen
+- title: Elektronische Gesundheitsakten
+  image: eHealthRecords.svg
+  items:
+  - title: Verbessert die Qualität der Pflege
+  - title: sorgt für Komfort und Effizienz
+  - title: Platz sparen
+  - title: 24/7 einfacher Patientenzugang über das Patientenportal
+- title: Qualitätsgesicherte Ärzte
+  image: doctor-on-demand.svg
+  items:
+  - title: 'Credentialing: Überprüfung der Kompetenz, wie sie durch Ausbildung nachgewiesen wird,
+      Ausbildung, Registrierung und Berufserfahrung '
+  - title: 'Privilegierung: Erteilung der Genehmigung zur Durchführung bestimmter Verfahren auf der Grundlage von
+      zum Nachweis der Kompetenz'
 
 octobot: OctoBot
 guides: Guides

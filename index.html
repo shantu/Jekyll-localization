@@ -1,252 +1,52 @@
 ---
 title: Home
-page_title: octobot
-namespace: octobot
+page_title: medicalWISDOM
+namespace: mmedicalWISDOM
 permalink: /
 ---
 
-<div class="bg-black">
-    <!-- Intro: OctoBot in a glance (on pager) -->
-    <div class="part video-background mt-0">
-        <div class="top-video">
-            <video autoplay muted loop class="video-banner"
-                   poster="/assets/videos/banner_poster.webp"
-                   data-fallback-poster="/assets/videos/fallback_banner_poster.webp"
-                   data-loading-poster="/assets/videos/loading_banner_poster.webp"
-                   data-src="/assets/videos/banner.mp4">
-            </video>
-        </div>
-        <div class="p-0">
-            <div class="mb-1 mb-md-4 w-100 mx-auto text-center">
-                <a id="home-first-try-now"
-                    href="https://www.octobot.cloud/"
-                    class="btn btn-lg call-to-action-button">
-                    {% t landing_page.try_octobot %}
-                </a>
+<div class="container-fluid gtco-banner-area">
+    <div class="container-xxl">
+        <div class="row align-items-start">
+            <div class="col-md-7 order-md-2">
+                <img class="img-fluid" src="/assets/images/feature-infographic.png" alt="" />
             </div>
-        </div>
-    </div>
-
-    <!-- What is OctoBot: differentiator & core features -->
-    <div class="part">
-        <div id="octobot" class="row py-1 py-md-2">
-            <div class="col col-md-5">
-                <!-- What is OctoBot -->
-                <div>
-                    <h3 class="border-bottom my-3 pb-2">{% t octobot %}</h3>
-                    <div>
-                        {% t landing_page.what_is_octobot_html %}
-                    </div>
-                </div>
-                <!-- Differentiator -->
-                <div>
-                    <h3 class="border-bottom my-3 pb-2">{% t landing_page.the_ecosystem %}</h3>
-                    <div>
-                        <p>{% t landing_page.ecosystem_details %}</p>
-                        <p>
-                            <a id="home-go-to-octobot-github"
-                               href="https://github.com/Drakkar-Software/OctoBot"
-                               class="btn outline-button" target="_blank" rel="noopener">
-                                {% t landing_page.see_octobot_on %} <i class="fab fa-github"></i> {% t landing_page.github %}
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 offset-md-1 col-md-5 text-center my-auto">
-                <div class="ratio ratio-16x9">
-                    <iframe
-                            width="560"
-                            height="315"
-                            src="https://www.youtube.com/embed/pRge5nR7Mbg?autoplay=0&loop=1&start=2&iv_load_policy=3&rel=0&showinfo=0"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            autoplay="1"
-                            allowfullscreen
-                    ></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="part gradient">
-        <!-- Features -->
-        <div id="setup" class="row py-3 py-md-5">
-            <div class="col-12 col-md-7 text-center px-0 my-auto">
-                {% include modalable_image.html
-                rendered_image_path="/assets/images/telegram-interface.webp"
-                class_attr="part-image-sm"
-                alt_attr="telegram interface"
-                title="guides_page.telegram_interface" %}
-                {% include modalable_image.html
-                rendered_image_path="/assets/images/evaluators.webp"
-                class_attr="part-image-md w-100"
-                alt_attr="evaluators configuration"
-                title="guides_page.evaluators_configuration" %}
-            </div>
-            <div class="col col-md-5">
-                <div>
-                    <h3 class="border-bottom my-3 pb-2">{% t landing_page.setup_the_strategy_that_fits_you %}</h3>
-                    <h6>{% t landing_page.each_strategy_is_testable %}</h6>
-                    <p>{% t landing_page.story.the_transformation %}</p>
-
-                    <span class="badge bg-primary">{% t community_page.coming_soon %}</span>
-                    {% t community_page.soon_share_tentacles_html %}
-
-                    <div class="mt-4">
-                        <a id="home-go-to-guides"
-                           href="{% tl guides %}" class="btn outline-button">
-                            {% t landing_page.usage_details %}
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="philosophy" class="row py-1 py-md-2">
-            <div class="col col-md-5">
-                <div>
-                    <h3 class="border-bottom my-3 pb-2">{% t landing_page.dont_trust_verify %}</h3>
-                    <div>
-                        <h6>{% t landing_page.octobot_is_just_like_cryptocurrencies %}</h6>
-                        <p class="mb-1">{% t landing_page.story.the_challenge %}</p>
-                        <ul>
-                            <li>
-                                {% t landing_page.story.the_challenge_li_1 %}
-                            </li>
-                            <li>
-                                {% t landing_page.story.the_challenge_li_2 %}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-7 text-center my-auto">
-                {% include modalable_image.html
-                rendered_image_path="/assets/images/backtesting.webp"
-                class_attr="part-image-md w-100"
-                alt_attr="backtesting"
-                title="landing_page.backtesting_result" %}
-            </div>
-        </div>
-        <div id="performances" class="row py-1 py-md-2">
-            <div class="col-12 col-md-7 text-center my-auto">
-                <img src="/assets/images/python-logo-inkscape.svg" class="part-image-sm" alt="python">
-            </div>
-            <div class="col col-md-5">
-                <div>
-                    <h3 class="border-bottom my-3 pb-2">{% t landing_page.built_for_performances %}</h3>
-                    <div>
-                        <h6>{% t landing_page.multi_layer_optimisations %}</h6>
-                        <p>{% t landing_page.optimisation_desc_html %}</p>
-                    </div>
-                </div>
+            <div class="col-md-5 order-md-1">
+                <h1>{% t herotext %}</h1>
+                <small>{% t herosubtitle %}</small><br>
+                <a href="https://patient.medicalwisdom.de/signup" target="_blank">{% t register %} <i
+                        class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>
 </div>
-
-<div id="install_octobot" class="part bg-darker py-2 py-md-4">
-    <div class="part-title">
-        <h2>{% t landing_page.try_octobot_now %}</h2>
-    </div>
-    {% include installation_methods.html
-        featured_added_classes="offset-md-2"
-        featured_badge="landing_page.recommended"
-        featured_cols="4"
-        other_cols="3"%}
-</div>
-
-<!-- OctoBot community -->
-<div id="community" class="part py-2 py-md-4">
-    <div class="part-title">
-        <h2>{% t landing_page.the_octobot_community %}</h2>
-    </div>
-    <!-- community channels -->
-    <div class="d-flex justify-content-center my-4">
-        <div class="mx-4">
-            <a id="home-go-to-octobot-telegram" href="https://t.me/joinchat/F9cyfxV97ZOaXQ47H5dRWw" target="_blank" rel="noopener" class="link"><i class="fab fa-telegram"></i>
-                {% t landing_page.telegram %}</a>
-        </div>
-        <div class="mx-4">
-            <a id="home-go-to-octobot-discord" href="https://discord.com/invite/vHkcb8W" target="_blank" rel="noopener" class="link"><i class="fab fa-discord"></i>
-                {% t landing_page.discord %}</a>
-        </div>
-    </div>
-    <!-- Stats -->
-    <div class="d-flex flex-wrap justify-content-center my-4">
-        <div class="mx-4">
-            <span class="bot-stats" id="monthly-bots">?</span> {% t landing_page.bots_this_month %}
-        </div>
-        <div class="mx-4">
-            <span class="bot-stats" id="daily-bots">?</span> {% t landing_page.bots_at_this_moment %}
-        </div>
-        <div class="mx-4">
-            <span class="bot-stats" id="all-bots">?</span> {% t landing_page.total_octobots %}
-        </div>
-    </div>
-    <div class="text-center">
-        <a id="home-go-to-community-stats"
-           href="{% tl community %}" class="btn outline-button">
-            {% t landing_page.octobot_statistics %}
-        </a>
-    </div>
-</div>
-
-<!-- Compatible exchanges -->
-<div id="exchanges" class="part bg-darker mb-0">
-    <div class="px-0 pt-5">
-        <div class="py-2 w-75 mx-auto">
-            <h2 class="mb-4 text-center">{% t landing_page.supported_exchanges %}</h2>
-            <div class="row">
-                {% include exchange_logo.html exchange="binance" logo="binance_logo.svg" link="https://exchanges.octobot.info/partners/binance/setup" %}
-                {% include exchange_logo.html exchange="okx" logo="okx_logo.png" link="https://exchanges.octobot.info/partners/okx/setup" %}
-                {% include exchange_logo.html exchange="bybit" logo="bybit_logo.svg" link="https://exchanges.octobot.info/partners/bybit" %}
-                {% include exchange_logo.html exchange="kucoin" logo="kucoin_logo.svg" link="https://exchanges.octobot.info/officially_supported/kucoin" %}
-                {% include exchange_logo.html exchange="hollaex" logo="hollaex_logo.png" link="https://exchanges.octobot.info/partners/hollaex/setup" %}
-                {% include exchange_logo.html exchange="cryptocom" logo="cryptocom_logo.webp" link="https://exchanges.octobot.info/partners/cryptocom" %}
-                {% include exchange_logo.html exchange="gateio" logo="gateio_logo.png" link="https://exchanges.octobot.info/partners/gateio" %}
-                {% include exchange_logo.html exchange="coinbase" logo="coinbase_logo.svg" link="https://exchanges.octobot.info/officially_supported/coinbase_pro" %}
-                {% include exchange_logo.html exchange="huobi" logo="huobi_logo.svg" link="https://exchanges.octobot.info/partners/huobi" %}
-            </div>
-            <div class="text-end my-4">
-                <h5>
-                    <a id="view-all-supported-exchanges" 
-                       href="https://exchanges.octobot.info/">{% t landing_page.view_all_exchanges %}</a>
-                </h5>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- News -->
-{% for category in site.categories %}
-    <div class="part my-4">
+<div class="container-fluid gtco-features" id="about">
+    <div class="container-xxl">
         <div class="row">
-            <h2 class="part-title">{% t category[0] %}</h2>
-            {% for post in category[1] %}
-                {% include article_preview.html article=post %}
-            {% endfor %}
-        </div>
-        <div class="text-end">
-            {% t landing_page.see_all_articles_on_our_blog_html %}
-        </div>
-    </div>
-{% endfor %}
-
-<!-- Special requests -->
-<div id="special_requests" class="part bg-darker mb-0">
-    <div class="px-0 py-5">
-        <h2 class="mb-4 text-center">{% t landing_page.special_requests %}</h2>
-        <div class="d-flex justify-content-center">
-            <div class="">
-                <p>
-                {% t landing_page.special_requests_desc_1_html %}
-                </p>
-                <p>
-                {% t landing_page.special_requests_desc_2_html %}
-                </p>
-                <p>
-                {% t landing_page.special_requests_desc_3_html %}
-                </p>
+            <div class="col-lg-12">
+                <div class="row">
+                    {% for feature in site.translations[site.lang].landing %}
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="oval">
+                                <img class="card-img-top" src="/assets/images/{{feature.image}}" alt="" />
+                            </div>
+                            <div class="card-body text-center">
+                                <h3>
+                                    {{ feature.title }}
+                                </h3>
+                            </div>
+                            {% for product in feature.items %}
+                            <ul class="list-group list-group-flush">
+                                <li class="border-bottom border-success list-group-item">
+                                    {{ product.title }}
+                                </li>
+                            </ul>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>

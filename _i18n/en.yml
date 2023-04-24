@@ -14,6 +14,33 @@ sitemapmenu: Site Map
 
 cookiesterms:  When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes. 
 rights: All rights reserved
+herotext: Get Best Advice from Leading Specialist Doctors...
+herosubtitle: Expert review that is personalized for you.
+register: Register
+
+landing:
+- title: Teleconsultations
+  image: teleconsult.svg
+  items:
+  - title: Private consultation with privacy protection
+  - title: No Waiting in the queues
+  - title: Transparent processes make personalized recovery plan
+  - title: Renew prescriptions when you need
+- title: eHealth Records
+  image: eHealthRecords.svg
+  items:
+  - title: Improves Quality of Care
+  - title: Ensures Convenience and Efficiency
+  - title: Save Space
+  - title: 24/7 Easy Patient Access through the patient portal
+- title: Quality Assured Doctors
+  image: doctor-on-demand.svg
+  items:
+  - title: 'Credentialing: Verification of competency, as demonstrated by education,
+      training, registration and work experience '
+  - title: 'Privileging: Granting of approval to perform certain procedures based
+      on demonstration of competency'
+
 
 octobot: OctoBot
 guides: Guides
