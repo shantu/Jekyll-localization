@@ -1,0 +1,36 @@
+---
+title: Contact Us | medicalWISODM - Elderly Care
+namespace: contactus
+permalink: /contactus/
+---
+<div class="container-fluid bg-a2h-dark" id="header-text">
+  <div class="container" style="padding-top: 70px; padding-bottom: 70px">
+    <h1>{% t contactus.title %}</h1>
+  </div>
+</div>
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-5">
+      <h1>Our Office</h1>
+      <div>
+        <div>
+          <div class="card-body">
+            <address>
+              <b> {% t contactus.address.title %} </b>
+              <br />
+              {% t contactus.address.line1 %} <br />
+              {% t contactus.address.line2 %} <br />
+              {% t contactus.address.line3 %}
+              <br />
+              <abbr title="Phone Number"> {% t contactus.address.contactMethod %} </abbr>
+              {% t contactus.address.contactNo %}
+            </address>
+            <address>
+              <a href="mailto:info@technicise.com">{% t contactus.address.mail %}</a>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
